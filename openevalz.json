@@ -1,0 +1,47 @@
+{
+  "openevalz_version": 1,
+  "eval": {
+    "id": "compute_eval",
+    "slug": "compute-eval",
+    "title": "ComputeEval: CUDA Code Generation Benchmark",
+    "group": "Coding",
+    "tags": [],
+    "source": "core"
+  },
+  "upstream": {
+    "repo": "https://github.com/UKGovernmentBEIS/inspect_evals",
+    "path": "src/inspect_evals/compute_eval",
+    "inspect_ai": "0.3.260",
+    "eval_version": "1-A",
+    "dependency": ""
+  },
+  "execution": {
+    "class": "sandbox-local",
+    "cost_class": "high",
+    "sandbox": [
+      "scorer"
+    ],
+    "requires_internet": false,
+    "fast": false,
+    "supports_k8s": false,
+    "environment": ""
+  },
+  "tasks": [
+    {
+      "name": "compute_eval",
+      "samples": 406
+    }
+  ],
+  "total_samples": 406,
+  "external_assets": [
+    {
+      "type": "huggingface",
+      "source": "nvidia/compute-eval",
+      "state": "pinned"
+    }
+  ],
+  "scaffolds": [
+    "baseline"
+  ],
+  "generated": "2026-08-25"
+}
